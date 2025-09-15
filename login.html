@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+        }
+
+        header {
+            background-image: url("assets/netflix.jpg");
+            height: 100vh;
+             width: 100%;
+        }
+
+        .background {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            
+        }
+
+        .gradient {
+            background-color: rgba(0, 0, 0, 0.4);
+            height: 100vh;
+            width: 100%;
+            top: 0;
+            left: 0;
+            right: 0;
+            position: absolute;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 15px 130px;
+            width: 95px;
+            max-width: 3000px;
+            position: relative;
+        }
+        .logo {
+            width: 205px;
+        }
+
+        .login-box {
+            justify-content: center;
+            background-color: rgba(0, 0, 0, 0.75);
+            padding: 30px 60px 20px;
+            border-radius: 8px;
+            width: 450px;
+            color: white;
+        }
+
+         .login-box h1 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        .login-box input {
+            width: 100%;
+            padding: 13px;
+            background: rgba(0, 0, 0, 0.70);
+            margin-top: 17px;
+            border: 1px solid rgb(102, 99, 99);
+            color: white;
+            font-size: 15px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .login-box .Sign {
+            width: 100%;
+            padding: 12px;
+            background: #e50914;
+            color: white;
+            border: none;
+            margin-top: 10px;
+            margin-bottom: 15px;
+            border-radius: 4px;
+            font-weight: bold;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .login-box button:hover {
+            background: #f40612;
+        }
+
+        .or-line {
+            display: flex;
+            align-items: center;
+            margin: 3px 0;
+            font-size: 14px;
+        }
+
+        .or-line span {
+            flex: 1;
+            height: 1px;
+        }
+        
+        .code-button {
+            width: 100%;
+            padding: 12px;
+            background: #3d3a3a;
+            color: white;
+            border: none;
+            margin-top: 10px;
+            margin-bottom: 13px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .link {
+            text-align: center;
+            margin-bottom: 13px;
+        }
+
+        .link a {
+            text-decoration: underline;
+            color: white;
+            font-size: 15px;
+        }
+
+        .options {
+            font-size: 14px;
+            margin-bottom: 8px;
+            color: white;
+        }
+        
+        .signup p {
+            margin-top: 10px;
+            color: #b3b3b3;
+            font-size: 14px;
+            margin-bottom: 12px;
+        }
+
+        .signup a {
+            color: white;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .captcha {
+            color: white;
+            font-size: 12px;
+            margin-bottom: 10px;
+        }
+        .learn a {
+            color: blue;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+        
+        footer {
+            background-color: rgb(53, 51, 51);
+            color: white;
+            padding: 20px;
+            font-size: 18px;
+            text-align: left;
+        }
+        
+        footer p {
+            margin-bottom: 25px;
+            font-size: 20px;
+        }
+
+        footer a {
+            font-size: 15px;
+            color: white;
+            text-decoration: none;
+            margin-right: 20px;
+        }
+        
+        .footer-link {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px 30px;
+            max-width: 600px;
+        }
+
+        .footer-link a {
+            font-size: 12px;
+            color: white;
+            text-decoration: none;
+        }
+
+        .footer-link a:hover {
+            text-decoration: underline;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+            <div class="gradient"></div>
+            <nav>
+                <img src="assets/netflix-logo.png" class="logo" />
+            </nav>
+            <div class="background">
+                <div class="login-box">
+                    <h1>Sign In</h1>
+                    <form>
+                        <input type="text" placeholder="Email or mobile number" required />
+                        <input type="password" placeholder="Password" required />
+                        <button type="submit" class="Sign">Sign In</button>
+                        <div class="or-line">
+                            <span></span> <p>OR</p> <span></span>
+                        </div>
+                        <button type="button" class="code-button">Use a Sign-In Code</button>
+                        <div class="link">
+                            <a href="#">Forgot password</a>
+                        </div>
+                        <div class="options">
+                            <input type="checkbox" id="remember" name="remember" value="remember">
+                            <label for="remember">Remember me</label>
+                        </div>
+                        <div class="signup">
+                            <p>New to Netflix? <a href="#">Sign up now.</a></p>
+                            <p class="captcha">
+                                This page is protected by Google reCAPTCHA to ensure you're not a bot.
+                            </p>
+                            <div class="learn">
+                                <a href="#">learn more.</a>
+                            </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </header>
+    <footer>
+        <p>Questions? <a href="#">Contact us.</a></p>
+        <div class="footer-link">
+            <a href="#">FAQ</a>
+            <a href="#">Help Center</a>
+            <a href="#">Terms of User</a>
+            <a href="#">Privacy</a><br><br>
+            <a href="#">Cookie Preferences</a>
+            <a href="#">Corporate Information</a>
+        </div>
+    </footer>
+</body>
+</html>
