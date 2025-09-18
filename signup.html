@@ -22,15 +22,11 @@
 
         nav {
             display: flex;
+            align-items: center;
+            padding: 20px 50px;
+            z-index: 10;
             justify-content: space-between;
-            align-items: flex-start;
-            max-width: 1280px;
-            width: 100%;
-            margin: auto;
-            margin-bottom: 30px;
-            padding: 20px 0;
             position: relative;
-            z-index: 99;
             border-bottom: 1px solid rgb(172, 167, 167);
         }
         .logo {
@@ -40,10 +36,15 @@
         .login {
             color: black;
             text-decoration: none;
-            padding: 10px 14px;
-            border-radius: 3px;
+            padding: 8px 20px;
+            border-radius: 4px;
             font-weight: bold;
             font-size: 20px;
+            transition: background-color 0.3s;
+        }
+
+        .login:hover {
+            background-color: #f6121d;
         }
 
         .step {
@@ -81,6 +82,7 @@
             margin-bottom: 15px;
             border: 1px solid #ccc;
             border-radius: 3px;
+            cursor: pointer;
         }
 
         .forgot {
@@ -101,6 +103,11 @@
             font-weight: bold;
             border-radius: 3px;
             cursor: pointer;
+        }
+
+        button:hover {
+            background-color: rgb(141, 82, 82);
+            transition: background-color 0.3s ease;
         }
 
         footer {
@@ -141,6 +148,21 @@
 
         .footer-link a:hover {
             text-decoration: underline;
+        }
+        
+        @media (max-width: 480px) {
+            .container {
+                width: 90px;
+                padding: 10px;
+            }
+
+            h2 {
+                font-size: 20px;
+            }
+
+            p {
+                font-size: 14px;
+            }
         }
 
     </style>

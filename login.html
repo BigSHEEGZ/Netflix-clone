@@ -43,38 +43,42 @@
         nav {
             display: flex;
             justify-content: space-between;
-            align-items: flex-start;
-            padding: 15px 130px;
-            width: 95px;
-            max-width: 3000px;
+            align-items: center;
+            padding: 20px 50px;
             position: relative;
+            z-index: 10;
         }
         .logo {
-            width: 205px;
+            width: 150px;
+            margin-bottom: 10px;
         }
 
         .login-box {
-            justify-content: center;
-            background-color: rgba(0, 0, 0, 0.75);
+            /* justify-content: center; */
+            background: rgba(0, 0, 0, 0.75);
             padding: 30px 60px 20px;
             border-radius: 8px;
-            width: 450px;
+            width: 100%;
+            max-width: 350px;
+            margin: auto;
             color: white;
         }
 
          .login-box h1 {
             font-size: 28px;
-            margin-bottom: 10px;
+            font-weight: bold;
+            margin-bottom: 6px;
         }
 
         .login-box input {
             width: 100%;
             padding: 13px;
             background: rgba(0, 0, 0, 0.70);
-            margin-top: 17px;
+            margin-top: 14px;
             border: 1px solid rgb(102, 99, 99);
             color: white;
             font-size: 15px;
+            font-weight: bold;
             border-radius: 4px;
             cursor: pointer;
         }
@@ -85,8 +89,8 @@
             background: #e50914;
             color: white;
             border: none;
-            margin-top: 10px;
-            margin-bottom: 15px;
+            margin-top: 8px;
+            margin-bottom: 12px;
             border-radius: 4px;
             font-weight: bold;
             font-size: 16px;
@@ -94,7 +98,7 @@
         }
 
         .login-box button:hover {
-            background: #f40612;
+            background: #b6252c;
         }
 
         .or-line {
@@ -115,15 +119,15 @@
             background: #3d3a3a;
             color: white;
             border: none;
-            margin-top: 10px;
-            margin-bottom: 13px;
+            margin-top: 8px;
+            margin-bottom: 9px;
             border-radius: 4px;
             cursor: pointer;
         }
 
         .link {
             text-align: center;
-            margin-bottom: 13px;
+            margin-bottom: 11px;
         }
 
         .link a {
@@ -133,7 +137,7 @@
         }
 
         .options {
-            font-size: 14px;
+            font-size: 13px;
             margin-bottom: 8px;
             color: white;
         }
@@ -141,7 +145,7 @@
         .signup p {
             margin-top: 10px;
             color: #b3b3b3;
-            font-size: 14px;
+            font-size: 12px;
             margin-bottom: 12px;
         }
 
@@ -153,7 +157,7 @@
 
         .captcha {
             color: white;
-            font-size: 12px;
+            font-size: 11px;
             margin-bottom: 10px;
         }
         .learn a {
@@ -167,7 +171,7 @@
             background-color: rgb(53, 51, 51);
             color: white;
             padding: 20px;
-            font-size: 18px;
+            font-size: 16px;
             text-align: left;
         }
         
@@ -198,6 +202,12 @@
 
         .footer-link a:hover {
             text-decoration: underline;
+        }
+
+        @media (max-width: 500px) {
+            .login-box {
+                margin: 0 1rem;
+            }
         }
 
     </style>
